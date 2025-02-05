@@ -9,7 +9,15 @@ module.exports = withMT({
   ],
 
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        main: ["main", "sans-serif"],
+        fontWeight: {
+          100: "100",
+          700: "700",
+        },
+      },
+    },
   },
   plugins: [],
 });

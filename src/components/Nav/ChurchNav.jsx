@@ -20,6 +20,7 @@ import {
   XMarkIcon,
   ChevronUpIcon,
 } from "@heroicons/react/24/outline";
+import { useNavigate } from "react-router";
 function ChurchNav() {
   const nestedMenuItems = [
     {
@@ -35,6 +36,7 @@ function ChurchNav() {
       title: "Ecommerce",
     },
   ];
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [openNestedMenu, setopenNestedMenu] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
@@ -55,7 +57,7 @@ function ChurchNav() {
         <MenuHandler>
           <Typography as="div" variant="small" className="font-medium">
             <ListItem
-              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
+              className="flex font-main items-center gap-2 py-2 pr-4 font-medium text-gray-900"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -85,14 +87,30 @@ function ChurchNav() {
           >
             <MenuList className="rounded-xl">{renderItems}</MenuList>
           </Menu>
-          <MenuItem dir="rtl">المناسبات الكنسية</MenuItem>
-          <MenuItem dir="rtl">الشهيدة دميانه شفيعة الكنيسة</MenuItem>
-          <MenuItem dir="rtl">تاريخ الكنيسة</MenuItem>
-          <MenuItem dir="rtl">أباء الكنيسة</MenuItem>
-          <MenuItem dir="rtl"> مواعيد الصلوات</MenuItem>dir=" rtl"
+          <MenuItem className="font-main" dir="rtl">
+            المناسبات الكنسية
+          </MenuItem>
+          <MenuItem className="font-main" dir="rtl">
+            الشهيدة دميانه شفيعة الكنيسة
+          </MenuItem>
+          <MenuItem className="font-main" dir="rtl">
+            تاريخ الكنيسة
+          </MenuItem>
+          <MenuItem className="font-main" dir="rtl">
+            أباء الكنيسة
+          </MenuItem>
+          <MenuItem
+            className="font-main"
+            onClick={() => navigate("/timetablepage")}
+            dir="rtl"
+          >
+            {" "}
+            مواعيد الصلوات
+          </MenuItem>
+          dir=" rtl"
         </MenuList>
       </Menu>
-      <div className="block lg:hidden">
+      <div className="block lg:hidden ">
         <Collapse dir=" rtl" open={isMobileMenuOpen}>
           <Menu
             placement="bottom"
@@ -105,11 +123,19 @@ function ChurchNav() {
               {renderItems}
             </MenuList>
           </Menu>
-          <MenuItem>المناسبات الكنسية</MenuItem>
-          <MenuItem>الشهيدة دميانه شفيعة الكنيسة</MenuItem>
-          <MenuItem>تاريخ الكنيسة</MenuItem>
-          <MenuItem>أباء الكنيسة</MenuItem>
-          <MenuItem> مواعيد الصلوات</MenuItem>
+          <MenuItem className="font-main">المناسبات الكنسية</MenuItem>
+          <MenuItem className="font-main">
+            الشهيدة دميانه شفيعة الكنيسة
+          </MenuItem>
+          <MenuItem className="font-main">تاريخ الكنيسة</MenuItem>
+          <MenuItem className="font-main">أباء الكنيسة</MenuItem>
+          <MenuItem
+            className="font-main"
+            onClick={() => navigate("/timetablepage")}
+          >
+            {" "}
+            مواعيد الصلوات
+          </MenuItem>
         </Collapse>
       </div>
     </React.Fragment>

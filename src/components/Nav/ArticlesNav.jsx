@@ -55,7 +55,7 @@ function ArticlesNav() {
         <MenuHandler>
           <Typography as="div" variant="small" className="font-medium">
             <ListItem
-              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
+              className="flex font-main items-center gap-2 py-2 pr-4 font-medium text-gray-900"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -83,10 +83,16 @@ function ArticlesNav() {
             open={openNestedMenu}
             handler={setopenNestedMenu}
           >
-            <MenuList className="rounded-xl">{renderItems}</MenuList>
+            <MenuList className="font-main rounded-xl">{renderItems}</MenuList>
           </Menu>
-          <MenuItem dir="rtl"> اخبار </MenuItem>
-          <MenuItem dir="rtl"> مقالات </MenuItem>
+          <MenuItem className="font-main" dir="rtl">
+            {" "}
+            اخبار{" "}
+          </MenuItem>
+          <MenuItem className="font-main" dir="rtl">
+            {" "}
+            مقالات{" "}
+          </MenuItem>
         </MenuList>
       </Menu>
       <div className="block lg:hidden">
@@ -102,8 +108,8 @@ function ArticlesNav() {
               {renderItems}
             </MenuList>
           </Menu>
-          <MenuItem> اخبار </MenuItem>
-          <MenuItem> مقالات </MenuItem>
+          <MenuItem className="font-main"> اخبار </MenuItem>
+          <MenuItem className="font-main"> مقالات </MenuItem>
         </Collapse>
       </div>
     </React.Fragment>

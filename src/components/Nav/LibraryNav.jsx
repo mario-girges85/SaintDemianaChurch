@@ -74,14 +74,14 @@ function LibraryNav() {
         <MenuHandler>
           <Typography as="div" variant="small" className="font-medium">
             <ListItem
-              className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
+              className="flex font-main items-center gap-2 py-2 pr-4 font-medium text-gray-900"
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
               مكتبات
               <ChevronDownIcon
                 strokeWidth={2.5}
-                className={`hidden h-3 w-3 transition-transform lg:block ${
+                className={`hidden font-main h-3 w-3 transition-transform lg:block ${
                   isMenuOpen ? "rotate-180" : ""
                 }`}
               />
@@ -103,7 +103,7 @@ function LibraryNav() {
             open={openNestedMenu_al7an}
             handler={setopenNestedMenu_al7an}
           >
-            <MenuHandler className="flex items-center justify-between">
+            <MenuHandler className="flex font-main items-center justify-between">
               <MenuItem>
                 مكتبة الالحان
                 <ChevronUpIcon
@@ -114,7 +114,9 @@ function LibraryNav() {
                 />
               </MenuItem>
             </MenuHandler>
-            <MenuList className="rounded-xl">{renderItems_al7an}</MenuList>
+            <MenuList className="font-main rounded-xl">
+              {renderItems_al7an}
+            </MenuList>
           </Menu>
           <Menu
             placement="right-start"
@@ -123,7 +125,7 @@ function LibraryNav() {
             open={openNestedMenu_books}
             handler={setopenNestedMenu_books}
           >
-            <MenuHandler className="flex items-center justify-between">
+            <MenuHandler className="flex font-main items-center justify-between">
               <MenuItem>
                 مكتبة الكتب
                 <ChevronUpIcon
@@ -134,11 +136,13 @@ function LibraryNav() {
                 />
               </MenuItem>
             </MenuHandler>
-            <MenuList className="rounded-xl">{renderItems_books}</MenuList>
+            <MenuList className="font-main rounded-xl">
+              {renderItems_books}
+            </MenuList>
           </Menu>
         </MenuList>
       </Menu>
-      <div className="block lg:hidden">
+      <div className="block font-main lg:hidden">
         <Collapse open={isMobileMenuOpen}>
           <Menu
             placement="bottom"
@@ -158,7 +162,7 @@ function LibraryNav() {
                 />
               </MenuItem>
             </MenuHandler>
-            <MenuList className="block rounded-xl lg:hidden">
+            <MenuList className="block font-main rounded-xl lg:hidden">
               {renderItems_al7an}
             </MenuList>
           </Menu>
@@ -181,7 +185,7 @@ function LibraryNav() {
                 />
               </MenuItem>
             </MenuHandler>
-            <MenuList className="block rounded-xl lg:hidden">
+            <MenuList className="block font-main rounded-xl lg:hidden">
               {renderItems_books}
             </MenuList>
           </Menu>
