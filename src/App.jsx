@@ -8,9 +8,6 @@ import Userlayout from "./Userlayout";
 const App = () => {
   return (
     <div>
-      <div className="md:mx-20">
-        <Navbar />
-      </div>
       <Routes>
         <Route path="/*" element={<Userlayout />}></Route>
       </Routes>
