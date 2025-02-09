@@ -7,7 +7,7 @@ const Timetable = () => {
   const navigate = useNavigate("");
   return (
     <div>
-      <div className="mt-4 flex flex-wrap justify-center items-center flex-row mx-[10%]">
+      <div className="mt-4 flex  flex-wrap justify-center items-center flex-row mx-[10%]">
         {/* container */}
         <div>
           {/* lottie */}

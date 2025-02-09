@@ -86,7 +86,7 @@ export function NavigationbarWithDropdownMultilevelMenu() {
           onClick={() => navigate("/")}
         >
           <Avatar src={logo} alt="avatar" />
-          <Typography className="font-bold ">
+          <Typography className="font-bold font-main ">
             {" "}
             كنيسة القديسة دميانة بالهرم
           </Typography>

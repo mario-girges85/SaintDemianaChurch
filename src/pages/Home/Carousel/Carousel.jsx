@@ -3,11 +3,25 @@ import image1 from "../../../assets/images/1.jpg";
 import image2 from "../../../assets/images/2.jpg";
 import image3 from "../../../assets/images/3.jpg";
 import { useNavigate } from "react-router";
+import { useEffect, useState } from "react";
 export function CarouselWithContent() {
   const navigate = useNavigate();
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowPopup(true);
+    }, 500); // Delay for visibility
+  }, []);
   return (
-    <Carousel className="h-[90vh]" loop={true} autoplay={true}>
-      {/* <div className="relative h-full w-full">
+    <Carousel
+      className={`h-[90vh] transition-transform duration-700 ease-in-out ${
+        showPopup ? "opacity-100 translate-y-0" : "opacity-0 translate-y-full"
+      }`}
+      loop={true}
+      autoplay={true}
+    >
+      <div className="relative h-full w-full">
         <img
           src={image1}
           alt="image 1"
@@ -42,7 +56,7 @@ export function CarouselWithContent() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       <div dir="rtl" className="relative h-full w-full">
         <img
           src={image2}
@@ -78,7 +92,7 @@ export function CarouselWithContent() {
           </div>
         </div>
       </div>
-      {/* <div className="relative h-full w-full">
+      <div className="relative h-full w-full">
         <img
           src={image3}
           alt="image 3"
@@ -113,7 +127,7 @@ export function CarouselWithContent() {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
     </Carousel>
   );
 }
