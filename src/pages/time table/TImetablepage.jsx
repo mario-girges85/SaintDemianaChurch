@@ -99,7 +99,7 @@ export function AccordionCustomIcon() {
             7:00ص الي 9:30ص
           </Typography>
           <Typography className="font-main mb-2">
-            علي مذبح القديسة دميانة
+            علي مذبح القديسةss دميانة
           </Typography>
         </AccordionBody>
       </Accordion>
