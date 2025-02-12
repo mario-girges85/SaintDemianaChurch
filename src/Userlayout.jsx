@@ -1,9 +1,9 @@
 import React from "react";
 import { Route, Routes } from "react-router";
-import Timetablepage from "./pages/time table/TImetablepage";
+import Timetablepage from "./pages/the church/time table/TImetablepage";
 import Home from "./pages/Home/Home";
 import Navbar from "./components/Nav/Navbar";
-import HistoryOfTheChurch from "./pages/History of the church/HistoryOfTheChurch";
+import HistoryOfTheChurch from "./pages/the church/History of the church/HistoryOfTheChurch";
 const Userlayout = () => {
   return (
     <div>
