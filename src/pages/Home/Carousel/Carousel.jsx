@@ -1,7 +1,7 @@
 import { Carousel, Typography, Button } from "@material-tailwind/react";
-import image1 from "../../../assets/images/1.jpg";
-import image2 from "../../../assets/images/2.jpg";
-import image3 from "../../../assets/images/3.jpg";
+import image2 from "../../../assets/images/2.JPG";
+import saintDemiana from "../../../assets/images/saint demiana.jpg";
+import fathers from "../../../assets/images/fathers.jpg";
 import { useNavigate } from "react-router";
 import { useEffect, useState } from "react";
 export function CarouselWithContent() {
@@ -21,9 +21,10 @@ export function CarouselWithContent() {
       loop={true}
       autoplay={true}
     >
-      <div className="relative h-full w-full">
+      {/* fathers */}
+      <div dir="rtl" className="relative h-full w-full">
         <img
-          src={image1}
+          src={fathers}
           alt="image 1"
           className="h-full w-full object-cover"
         />
@@ -32,19 +33,17 @@ export function CarouselWithContent() {
             <Typography
               variant="h1"
               color="white"
-              className="mb-4 text-3xl md:text-4xl lg:text-5xl"
+              className="mb-4 font-main text-3xl md:text-4xl lg:text-5xl"
             >
-              The Beauty of Nature
+              آباء كنسية القديسة دميانة بالهرم
             </Typography>
             <Typography
               variant="lead"
               color="white"
-              className="mb-12 opacity-80"
+              className="mb-12 opacity-80 font-main"
             >
-              It is not so much for its beauty that the forest makes a claim
-              upon men&apos;s hearts, as for that subtle something, that quality
-              of air that emanation from old trees, that so wonderfully changes
-              and renews a weary spirit.
+              "كَهَنَتُكَ يَلْبَسُونَ الْبِرَّ، وَأَتْقِيَاؤُكَ يَهْتِفُونَ"
+              (سفر المزامير 132: 9)
             </Typography>
             <div className="flex justify-center gap-2">
               <Button size="lg" color="white">
@@ -57,6 +56,7 @@ export function CarouselWithContent() {
           </div>
         </div>
       </div>
+      {/* the history of the church */}
       <div dir="rtl" className="relative h-full w-full">
         <img
           src={image2}
@@ -92,14 +92,16 @@ export function CarouselWithContent() {
           </div>
         </div>
       </div>
-      <div className="relative h-full w-full">
+
+      {/* saint demiana */}
+      <div dir="rtl" className="relative h-full w-full">
         <img
-          src={image3}
+          src={saintDemiana}
           alt="image 3"
           className="h-full w-full object-cover"
         />
         <div className="absolute inset-0 grid h-full w-full items-end bg-black/75">
-          <div className="w-3/4 pl-12 pb-12 md:w-2/4 md:pl-20 md:pb-20 lg:pl-32 lg:pb-32">
+          <div className="w-3/4 pr-12 pb-12 md:w-2/4 md:pr-20 md:pb-20 lg:pr-32 lg:pb-32">
             <Typography
               variant="h1"
               color="white"

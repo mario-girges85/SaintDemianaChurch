@@ -4,6 +4,7 @@ import Timetablepage from "./pages/the church/time table/TImetablepage";
 import Home from "./pages/Home/Home";
 import Navbar from "./components/Nav/Navbar";
 import HistoryOfTheChurch from "./pages/the church/History of the church/HistoryOfTheChurch";
+import NotFound from "./pages/NotFound";
 const Userlayout = () => {
   return (
     <div>
@@ -17,6 +18,7 @@ const Userlayout = () => {
           path="/historyofthechurch"
           element={<HistoryOfTheChurch />}
         ></Route>
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </div>
   );
