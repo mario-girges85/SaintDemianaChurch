@@ -4,17 +4,7 @@ const HistoryOfTheChurch = () => {
   return (
     <div className="flex flex-row flex-wrap h-screen items-center justify-center gap-4">
       <div>
-        <iframe
-          className="rounded-lg"
-          width="450"
-          height="260"
-          src="https://www.youtube.com/embed/q9JnFXcVSno"
-          title="تاريخ كنيسة القديسة دميانة بالهرم"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; "
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+       iframe
       </div>
       <div className="mx-14 md:w-[50%] flex gap-3 flex-col" dir="rtl">
         <Typography className="font-main font-bold" variant="h2">
