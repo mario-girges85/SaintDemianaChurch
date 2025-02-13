@@ -6,7 +6,6 @@ const ListWrapper = () => {
       <Timetable />
       <Timetable />
       <Timetable />
-      <Timetable />
     </div>
   );
 };

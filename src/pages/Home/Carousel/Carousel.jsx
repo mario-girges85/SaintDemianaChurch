@@ -105,26 +105,23 @@ export function CarouselWithContent() {
             <Typography
               variant="h1"
               color="white"
-              className="mb-4 text-3xl md:text-4xl lg:text-5xl"
+              className="mb-4 font-main text-3xl md:text-4xl lg:text-5xl"
             >
-              The Beauty of Nature
+              سيرة القديسة دميانة
             </Typography>
             <Typography
               variant="lead"
               color="white"
-              className="mb-12 opacity-80"
+              className="mb-12 font-main opacity-80"
             >
-              It is not so much for its beauty that the forest makes a claim
-              upon men&apos;s hearts, as for that subtle something, that quality
-              of air that emanation from old trees, that so wonderfully changes
-              and renews a weary spirit.
+              وُلدت من أبوين مسيحيين تقيين في أواخر القرن الثالث، كان أبوها مرقس
+              واليًا على البرلس والزعفران بوادي السيسبان. إذ بلغت العام الأول من
+              عمرها تعمدت في دير الميمة جنوب مدينة الزعفران، وأقام والدها مأدبة
+              فاخرة للفقراء والمحتاجين لمدة ثلاثة أيام، بعد فترة انتقلت والدتها.
             </Typography>
             <div className="flex gap-2">
               <Button size="lg" color="white">
-                Explore
-              </Button>
-              <Button size="lg" color="white" variant="text">
-                Gallery
+                اعرف المزيد
               </Button>
             </div>
           </div>
