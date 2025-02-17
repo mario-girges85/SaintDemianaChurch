@@ -16,7 +16,7 @@ export function CarouselWithContent() {
   return (
     <div className="mx-4 md:mx-12 ">
       <Carousel
-        className={`h-[90vh] transition-transform duration-700 ease-in-out  ${
+        className={`h-[90vh] transition-transform rounded-xl duration-700 ease-in-out  ${
           showPopup ? "opacity-100 translate-y-0" : "opacity-0 translate-y-full"
         }`}
         loop={true}
