@@ -1,5 +1,5 @@
 import { Carousel, Typography, Button } from "@material-tailwind/react";
-import image2 from "../../../assets/images/2.JPG";
+import image2 from "../../../assets/images/khoras.jpg";
 import saintDemiana from "../../../assets/images/saint demiana.jpg";
 import fathers from "../../../assets/images/fathers.jpg";
 import { useNavigate } from "react-router";
