@@ -1,7 +1,7 @@
 import { Carousel, Typography, Button } from "@material-tailwind/react";
-import image2 from "../../../assets/images/khoras.jpg";
+import khoras from "../../../assets/images/khoras2.jpg";
 import saintDemiana from "../../../assets/images/saint demiana.jpg";
-import fathers from "../../../assets/images/fathers.jpg";
+import fathers from "../../../assets/images/fathers2.jpg";
 import { useNavigate } from "react-router";
 import { useEffect, useState } from "react";
 export function CarouselWithContent() {
@@ -60,7 +60,7 @@ export function CarouselWithContent() {
         {/* the history of the church */}
         <div dir="rtl" className="relative h-full w-full">
           <img
-            src={image2}
+            src={khoras}
             alt="image 2"
             className="h-full w-full object-cover"
           />
