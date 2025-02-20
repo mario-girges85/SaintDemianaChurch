@@ -28,7 +28,6 @@ export function CarouselWithContent() {
             src={fathers}
             alt="image 1"
             className="h-full w-full object-cover"
-            loading="lazy"
           />
           <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
             <div className="w-3/4 text-center md:w-2/4">
@@ -48,23 +47,25 @@ export function CarouselWithContent() {
                 (سفر المزامير 132: 9)
               </Typography>
               <div className="flex justify-center gap-2">
-                <Button size="lg" color="white">
-                  Explore
-                </Button>
-                <Button size="lg" color="white" variant="text">
-                  Gallery
+                <Button
+                  size="lg"
+                  onClick={() => navigate("/fathers")}
+                  className="font-main"
+                  color="white"
+                >
+                  اعرف المزيد
                 </Button>
               </div>
             </div>
           </div>
         </div>
+
         {/* the history of the church */}
         <div dir="rtl" className="relative h-full w-full">
           <img
             src={khoras}
             alt="image 2"
             className="h-full w-full object-cover"
-            loading="lazy"
           />
           <div className="absolute inset-0 grid h-full w-full items-center bg-black/75">
             <div className="w-3/4 pr-12 md:w-2/4 md:pr-20 lg:pr-32">
@@ -102,7 +103,6 @@ export function CarouselWithContent() {
             src={saintDemiana}
             alt="image 3"
             className="h-full w-full object-cover"
-            loading="lazy"
           />
           <div className="absolute inset-0 grid h-full w-full items-end bg-black/75">
             <div className="w-3/4 pr-12 pb-12 md:w-2/4 md:pr-20 md:pb-20 lg:pr-32 lg:pb-32">
@@ -124,8 +124,13 @@ export function CarouselWithContent() {
                 والدها مأدبة فاخرة للفقراء والمحتاجين لمدة ثلاثة أيام، بعد فترة
                 انتقلت والدتها.
               </Typography>
-              <div className="flex gap-2">
-                <Button size="lg" color="white">
+              <div className="flex font-main gap-2">
+                <Button
+                  size="lg"
+                  onClick={() => navigate("/saintdemiana")}
+                  className="font-main"
+                  color="white"
+                >
                   اعرف المزيد
                 </Button>
               </div>

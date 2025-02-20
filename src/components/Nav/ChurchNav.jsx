@@ -90,13 +90,25 @@ function ChurchNav() {
           <MenuItem className="font-main" dir="rtl">
             المناسبات الكنسية
           </MenuItem>
-          <MenuItem className="font-main" dir="rtl">
+          <MenuItem
+            onClick={() => navigate("/saintdemiana")}
+            className="font-main"
+            dir="rtl"
+          >
             الشهيدة دميانه شفيعة الكنيسة
           </MenuItem>
-          <MenuItem className="font-main" dir="rtl">
+          <MenuItem
+            onClick={() => navigate("/historyofthechurch")}
+            className="font-main"
+            dir="rtl"
+          >
             تاريخ الكنيسة
           </MenuItem>
-          <MenuItem className="font-main" dir="rtl">
+          <MenuItem
+            onClick={() => navigate("/fathers")}
+            className="font-main"
+            dir="rtl"
+          >
             أباء الكنيسة
           </MenuItem>
           <MenuItem
@@ -124,11 +136,21 @@ function ChurchNav() {
             </MenuList>
           </Menu>
           <MenuItem className="font-main">المناسبات الكنسية</MenuItem>
-          <MenuItem className="font-main">
+          <MenuItem
+            onClick={() => navigate("/saintdemiana")}
+            className="font-main"
+          >
             الشهيدة دميانه شفيعة الكنيسة
           </MenuItem>
-          <MenuItem className="font-main">تاريخ الكنيسة</MenuItem>
-          <MenuItem className="font-main">أباء الكنيسة</MenuItem>
+          <MenuItem
+            onClick={() => navigate("/historyofthechurch")}
+            className="font-main"
+          >
+            تاريخ الكنيسة
+          </MenuItem>
+          <MenuItem onClick={() => navigate("/fathers")} className="font-main">
+            أباء الكنيسة
+          </MenuItem>
           <MenuItem
             className="font-main"
             onClick={() => navigate("/timetablepage")}
