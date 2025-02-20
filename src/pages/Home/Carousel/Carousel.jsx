@@ -28,6 +28,7 @@ export function CarouselWithContent() {
             src={fathers}
             alt="image 1"
             className="h-full w-full object-cover"
+            loading="lazy"
           />
           <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
             <div className="w-3/4 text-center md:w-2/4">
@@ -63,6 +64,7 @@ export function CarouselWithContent() {
             src={khoras}
             alt="image 2"
             className="h-full w-full object-cover"
+            loading="lazy"
           />
           <div className="absolute inset-0 grid h-full w-full items-center bg-black/75">
             <div className="w-3/4 pr-12 md:w-2/4 md:pr-20 lg:pr-32">
@@ -100,6 +102,7 @@ export function CarouselWithContent() {
             src={saintDemiana}
             alt="image 3"
             className="h-full w-full object-cover"
+            loading="lazy"
           />
           <div className="absolute inset-0 grid h-full w-full items-end bg-black/75">
             <div className="w-3/4 pr-12 pb-12 md:w-2/4 md:pr-20 md:pb-20 lg:pr-32 lg:pb-32">
