@@ -7,6 +7,7 @@ import HistoryOfTheChurch from "./pages/the church/History of the church/History
 import NotFound from "./pages/NotFound";
 import Fathers from "./pages/the church/fathers/Fathers";
 import SaintDemiana from "./pages/the church/saint demiana/SaintDemiana";
+import Al7anLibrary from "./pages/Library/Al7anLibrary";
 const Userlayout = () => {
   return (
     <div>
@@ -23,6 +24,7 @@ const Userlayout = () => {
           path="/historyofthechurch"
           element={<HistoryOfTheChurch />}
         ></Route>
+        <Route path="/Al7anLibrary" element={<Al7anLibrary />}></Route>
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </div>

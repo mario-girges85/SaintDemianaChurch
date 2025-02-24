@@ -20,8 +20,10 @@ import {
   XMarkIcon,
   ChevronUpIcon,
 } from "@heroicons/react/24/outline";
+import { useNavigate } from "react-router";
 
 function LibraryNav() {
+  const navigate = useNavigate();
   const nestedMenuItems_al7an = [
     {
       title: "الحان تسبحة",
@@ -57,6 +59,7 @@ function LibraryNav() {
       <MenuItem>{title}</MenuItem>
     </a>
   ));
+
   const renderItems_books = nestedMenuItems_books.map(({ title }, key) => (
     <a href="#" key={key}>
       <MenuItem>{title}</MenuItem>
