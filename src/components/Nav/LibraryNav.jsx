@@ -34,6 +34,10 @@ function LibraryNav() {
     {
       title: "الحان ستوي",
     },
+    {
+      title: "الحان الصوم الكبير", // Add the new item here
+      link: "/al7anLibrary", // Add the link for navigation
+    },
   ];
   const nestedMenuItems_books = [
     {
@@ -54,11 +58,13 @@ function LibraryNav() {
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
 
-  const renderItems_al7an = nestedMenuItems_al7an.map(({ title }, key) => (
-    <a href="#" key={key}>
-      <MenuItem>{title}</MenuItem>
-    </a>
-  ));
+  const renderItems_al7an = nestedMenuItems_al7an.map(
+    ({ title, link }, key) => (
+      <a href={link || "#"} key={key} onClick={() => link && navigate(link)}>
+        <MenuItem>{title}</MenuItem>
+      </a>
+    )
+  );
 
   const renderItems_books = nestedMenuItems_books.map(({ title }, key) => (
     <a href="#" key={key}>
