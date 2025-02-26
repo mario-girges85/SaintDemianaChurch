@@ -24,7 +24,8 @@ const Userlayout = () => {
           path="/historyofthechurch"
           element={<HistoryOfTheChurch />}
         ></Route>
-        <Route path="/al7anLibrary" element={<Al7anLibrary />}></Route>
+        <Route path="/al7ansiamy" element={<Al7anLibrary />}></Route>
+
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </div>

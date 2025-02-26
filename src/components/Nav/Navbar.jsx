@@ -23,9 +23,10 @@ import {
 import logo from "../../assets/logo.png";
 import ChurchNav from "./ChurchNav";
 import ServicesNav from "./ServicesNav";
-import LibraryNav from "./LibraryNav";
 import ArticlesNav from "./ArticlesNav";
 import { Navigate, useNavigate } from "react-router";
+import Al7an from "./Al7anNav";
+import Al7anNav from "./Al7anNav";
 
 function NavList() {
   const navigate = useNavigate();
@@ -49,7 +50,8 @@ function NavList() {
       <ChurchNav />
       <ServicesNav />
       <ArticlesNav />
-      <LibraryNav />
+      {/* <LibraryNav /> */}
+      <Al7anNav />
       <Typography
         as="a"
         href="#"
