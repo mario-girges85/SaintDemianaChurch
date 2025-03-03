@@ -1,13 +1,13 @@
 import React from "react";
 import Mp3PlayerCard from "./Mp3PlayerCard";
 import Mp3player from "./Mp3player";
-
+import shary_efnoty from "./Al7an siami/1.mp3";
 const Al7anLibrary = () => {
   const mp3Files = [
     {
       title: "لحن شاري افنوتي",
       artist: "Artist 1",
-      filePath: "../../assets/Al7an/1.mp3",
+      filePath: shary_efnoty,
     },
     { title: "Song 2", artist: "Artist 2", filePath: "./assets/song2.mp3" },
 
