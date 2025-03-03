@@ -44,7 +44,7 @@ const AudioPlayer = ({ src, title = "audio" }) => {
     setDuration(duration);
     setProgress((currentTime / duration) * 100);
   };
-
+  //m
   const handleProgressClick = (e) => {
     const progressBar = e.currentTarget;
     const rect = progressBar.getBoundingClientRect();
