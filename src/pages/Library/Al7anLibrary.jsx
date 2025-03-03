@@ -1,5 +1,6 @@
 import React from "react";
 import Mp3PlayerCard from "./Mp3PlayerCard";
+import Mp3player from "./Mp3player";
 
 const Al7anLibrary = () => {
   const mp3Files = [
@@ -19,13 +20,13 @@ const Al7anLibrary = () => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center items-center gap-32 mb-4 ">
+    <div className="flex flex-wrap justify-center items-center gap-5 mb-4 ">
       {mp3Files.map((mp3, index) => (
-        <Mp3PlayerCard
+        <Mp3player
           key={index}
           title={mp3.title}
           artist={mp3.artist}
-          filePath={mp3.filePath}
+          src={mp3.filePath}
         />
       ))}
     </div>
