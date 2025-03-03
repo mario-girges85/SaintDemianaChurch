@@ -1,4 +1,9 @@
-import { Carousel, Typography, Button } from "@material-tailwind/react";
+import {
+  Carousel,
+  Typography,
+  Button,
+  Spinner,
+} from "@material-tailwind/react";
 import khoras from "../../../assets/images/khoras2.jpg";
 import saintDemiana from "../../../assets/images/saint demiana.jpg";
 import fathers from "../../../assets/images/fathers2.jpg";

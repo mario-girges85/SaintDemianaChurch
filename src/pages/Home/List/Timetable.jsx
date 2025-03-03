@@ -25,7 +25,8 @@ const Timetable = () => {
       <div className="flex w-72 flex-col items-center gap-3">
         <h1 className="text-lg font-main font-bold">مواعيد القداسات</h1>
         <p className="font-main w-52 font-medium text-center text-gray-500">
-          تعرف علي مواعيد جميع القداسات علي مدار الاسبوع
+          تعرف علي مواعيد جميع القداسات علي مدار الاسبوع خلال الصوم الكبير
+          المقدس
         </p>
 
         {/* Animated Button */}
