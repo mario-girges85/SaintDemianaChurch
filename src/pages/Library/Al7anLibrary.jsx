@@ -9,7 +9,7 @@ const Al7anLibrary = () => {
       artist: "Artist 1",
       filePath: "/src/assets/Al7an/1.mp3",
     },
-    { title: "Song 2", artist: "Artist 2", filePath: "/assets/song2.mp3" },
+    { title: "Song 2", artist: "Artist 2", filePath: "./assets/song2.mp3" },
     { title: "Song 3", artist: "Artist 3", filePath: "/assets/song3.mp3" },
     { title: "Song 3", artist: "Artist 3", filePath: "/assets/song3.mp3" },
     { title: "Song 3", artist: "Artist 3", filePath: "/assets/song3.mp3" },
