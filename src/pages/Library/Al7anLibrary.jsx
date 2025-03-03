@@ -6,19 +6,11 @@ const Al7anLibrary = () => {
   const mp3Files = [
     {
       title: "لحن شاري افنوتي",
-      artist: "Artist 1",
       filePath: shary_efnoty,
     },
-    { title: "Song 2", artist: "Artist 2", filePath: "./assets/song2.mp3" },
+    { title: "Song 2", filePath: "./assets/song2.mp3" },
 
-    { title: "Song 3", artist: "Artist 3", filePath: "./assets/song3.mp3" },
-    { title: "Song 3", artist: "Artist 3", filePath: "./assets/song3.mp3" },
-    { title: "Song 3", artist: "Artist 3", filePath: "./assets/song3.mp3" },
-
-    { title: "Song 3", artist: "Artist 3", filePath: "/assets/song3.mp3" },
-    { title: "Song 3", artist: "Artist 3", filePath: "/assets/song3.mp3" },
-    { title: "Song 3", artist: "Artist 3", filePath: "/assets/song3.mp3" },
-    { title: "Song 3", artist: "Artist 3", filePath: "/assets/song3.mp3" },
+    { title: "Song 3", filePath: "./assets/song3.mp3" },
   ];
 
   return (
